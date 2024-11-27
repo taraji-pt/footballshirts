@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Teams - Africa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px auto;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        .kit {
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        .kit img {
+            width: 150px;
+            height: auto;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .kit img:hover {
+            transform: scale(1.05);
+        }
+        .details {
+            font-size: 0.9em;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: #ccc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>National Teams - Africa</h1>
+    </header>
+    <nav>
+        <a href="national-teams.html">Back to National Teams</a>
+        <a href="index.html">Home</a>
+    </nav>
+    <main>
+<div class="kit">
+            <h3>Cape Verde</h3>
+            <img src="https://i.imgur.com/atpoaWy.jpeg" alt="front" class="clickable">
+            <img src="https://i.imgur.com/FcINFJc.jpeg" alt="back" class="clickable">
+            <div class="details">
+                <p><strong>Season:</strong> 2010</p>
+                <p><strong>Maker:</strong> KS Sport</p>
+                <p><strong>Type:</strong> Home</p>
+		<p><strong>Player:</strong> #20 <a href="https://www.zerozero.pt/jogador/heldon/76649" target="_blank" style="color: blue; text-decoration: underline;">Héldon</a> -- In 2010 he was playing for Marítimo and completed 4 national team caps, always coming on as a sub</p>
+<p><strong>Fun fact:</strong> This shirt was either match-issued or possibly even match-worn (I’m not entirely sure) and was gifted by the player (through a proxy) a few years later, during Héldon’s time at Sporting CP</p>
+            </div>
+        </div>
+<div class="kit">
+            <h3>Morocco</h3>
+            <img src="https://i.imgur.com/9T7ukky.jpeg" alt="front" class="clickable">
+            <img src="https://i.imgur.com/UY0stV5.jpeg" alt="back" class="clickable">
+            <div class="details">
+                <p><strong>Season:</strong> 1998</p>
+                <p><strong>Maker:</strong> Puma</p>
+                <p><strong>Type:</strong> Third</p>
+            </div>
+        </div>
+         <div class="kit">
+            <h3>Tunisia</h3>
+            <img src="https://i.imgur.com/CQ8t1EM.jpeg" alt="front" class="clickable">
+            <img src="https://i.imgur.com/6g25ebL.jpeg" alt="back" class="clickable">
+            <div class="details">
+                <p><strong>Season:</strong> 2022/23</p>
+                <p><strong>Maker:</strong> Kappa</p>
+                <p><strong>Type:</strong> Away</p>
+<p><strong>Player:</strong> #10 <a href="https://www.zerozero.pt/jogador/hannibal-mejbri/662870" target="_blank" style="color: blue; text-decoration: underline;">Hannibal</a> -- In 2022/23 he was playing for Birmingham City and completed 18 national team caps, 9 of them coming on as a sub</p>
+            </div>
+
+            <img src="https://i.imgur.com/8oI8lHS.jpeg" alt="front" class="clickable">
+            <img src="https://i.imgur.com/2f5DCqF.jpeg" alt="back" class="clickable">
+            <div class="details">
+                <p><strong>Season:</strong> 2004/05</p>
+                <p><strong>Maker:</strong> Puma</p>
+                <p><strong>Type:</strong> Home</p>
+<p><strong>Player:</strong> #11 <a href="https://www.zerozero.pt/jogador/francileudo-dos-santos/3797" target="_blank" style="color: blue; text-decoration: underline;">Dos Santos</a> -- In 2004/05 he was playing for Sochaux and completed 22 national team caps, 2 of them coming on as a sub; during those two years, he scored 14 goals for the national team, including a pivotal opener in the 2004 African Cup of Nations final, which saw Tunisia secure a 2-1 triumph over Morocco</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script>
+        // Get modal elements
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+        const closeBtn = document.querySelector(".close");
+
+        // Add click event to all clickable images
+        document.querySelectorAll(".clickable").forEach(img => {
+            img.addEventListener("click", () => {
+                modal.style.display = "block";
+                modalImg.src = img.src; // Set the modal image source to the clicked image
+            });
+        });
+
+        // Close modal when clicking on the close button
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        // Close modal when clicking outside the image
+        window.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>

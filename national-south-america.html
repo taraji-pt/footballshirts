@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Teams - South America</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin: 20px auto;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            margin: 5px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        .kit {
+            margin: 20px auto;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+        .kit img {
+            width: 150px;
+            height: auto;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .kit img:hover {
+            transform: scale(1.05);
+        }
+        .details {
+            font-size: 0.9em;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover,
+        .close:focus {
+            color: #ccc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>National Teams - South America</h1>
+    </header>
+    <nav>
+        <a href="national-teams.html">Back to National Teams</a>
+        <a href="index.html">Home</a>
+    </nav>
+    <main>
+ <div class="kit">
+            <h3>Argentina</h3>
+            <img src="..." alt="front" class="clickable">
+            <img src="..." alt="back" class="clickable">
+            <div class="details">
+                <p><strong>Season:</strong> 2024</p>
+                <p><strong>Maker:</strong> Adidas</p>
+                <p><strong>Type:</strong> Anniversary (50 years of partnership between AFA and Adidas)</p>
+<p><strong>Player:</strong> #10 <a href="https://www.zerozero.pt/jogador/diego-maradona" target="_blank" style="color: blue; text-decoration: underline;">Maradona</a> -- I chose to customize this shirt in honor of <i>El Pibe de Oro</i> as a personal tribute to one of football's greatest legends; with an unforgettable and successful career that spanned from 1976 to 1997, <i>D10S</i> wore the colors of 3 clubs in his home country (Argentinos, Newell's and Boca), 2 in Spain (Barcelona and Sevilla), as well as, of course, the 7 remarkable seasons in Italy, representing Napoli; between 1977 and 1994, <i>Dieguito</i> earned 89 international caps, scoring 32 goals along the way; in 1986, he experienced his greatest joy with the <i>Albiceleste</i>, lifting the FIFA World Cup trophy</p>
+
+            </div>
+            <img src="https://i.imgur.com/QTetYtu.jpeg" alt="front" class="clickable">
+            <img src="https://i.imgur.com/baUk4gr.jpeg" alt="back" class="clickable">
+            <div class="details">
+                <p><strong>Season:</strong> 2014</p>
+                <p><strong>Maker:</strong> Adidas</p>
+                <p><strong>Type:</strong> Away</p>
+ 		<p><strong>Player:</strong> #7 <a href="https://www.zerozero.pt/jogador/angel-di-maria/37283" target="_blank" style="color: blue; text-decoration: underline;">Di María</a> -- In 2014 he was playing for Real Madrid and completed 13 national team caps, 2 of them coming on as a sub; in that season he scored twice for the national team</p>
+</div>
+</div>
+<div class="kit">
+            <h3>Chile</h3>
+            <img src="https://i.imgur.com/dt72YJH.jpeg" alt="front" class="clickable">
+            <img src="https://i.imgur.com/vWQnwkn.jpeg" alt="back" class="clickable">
+            <div class="details">
+                <p><strong>Season:</strong> 2015/16</p>
+                <p><strong>Maker:</strong> Nike</p>
+                <p><strong>Type:</strong> Home</p>
+		<p><strong>Player:</strong> #7 <a href="https://www.zerozero.pt/jogador/alexis-sanchez/29236" target="_blank" style="color: blue; text-decoration: underline;">Alexis</a> -- In 2015/16 he was playing for Arsenal and completed 29 national team caps, 1 of them coming on as a sub; during those two years, he scored 10 goals for the national team, including 1 during CONMEBOL Copa América 2015 and 3 during CONMEBOL Copa América 2016; Chile went on to clinch both titles</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script>
+        // Get modal elements
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImg");
+        const closeBtn = document.querySelector(".close");
+
+        // Add click event to all clickable images
+        document.querySelectorAll(".clickable").forEach(img => {
+            img.addEventListener("click", () => {
+                modal.style.display = "block";
+                modalImg.src = img.src; // Set the modal image source to the clicked image
+            });
+        });
+
+        // Close modal when clicking on the close button
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        // Close modal when clicking outside the image
+        window.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+</body>
+</html>
